@@ -1,5 +1,5 @@
 # HTML Assets
-If you are using gulp-starter with another platform that handles markup, delete this folder and the `tasks.html` config in `gulpfile.js/config.json`, and don't forget to [configure BrowserSync to watch your platform's template files](https://browsersync.io/docs/options/#option-files) for changes!
+If you are using gulp-starter with another platform that handles markup, delete this folder and the `tasks.html` config in `gulpfile.js/config.json`, and don't forget to [configure Browsersync to watch your platform's template files](https://browsersync.io/docs/options/#option-files) for changes!
 
 If you are using gulp-starter as a standalone static site builder, this is where your markup goes. I've provided a few [Nunjucks](https://mozilla.github.io/nunjucks/) folders and files to get you started:
 
@@ -15,6 +15,7 @@ gulpfile.js/tasks/html
 ```
 Robust templating with [Nunjucks](https://mozilla.github.io/nunjucks/). Nunjucks is nearly identical in syntax to Twig (PHP), and replaces Swig (and Twig-like js templating language), which is no longer maintained.
 Blendid supports adding custom Nunjucks filters via `task-config.js` by passing `html.manageEnv`. For example:
+
 ```js
 html: {
   manageEnv: function(env) {
